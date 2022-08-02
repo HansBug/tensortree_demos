@@ -1,0 +1,36 @@
+- tensor tree
+  - Design purpose: a universal tree structure operating model that is easily generalized.
+  - Moderate encapsulation, general tree structure modeling.
+  - You may immediately see the structure and data by print, exporting a visual picture of the tree structure (see supplementary material F), and reverse converting tree objects into human-readable and editable Python source code.
+  - Allows for the creation of complicated user-defined tree operation logic and the expansion of any multivariate operation to many trees.
+  - When used, the syntax style is 100% consistent with the original library or object, and readability and maintainability are excellent.
+  - Best operational performance.
+  - Others
+    - A variety of tree structure computation tools, such as subside, rise, flatten, etc.
+    - Rich tree node data calculation tools, such as mapping, reduction, etc.
+    - Support for complex tree operation logic building; you can define the processing strategy in the event of missing key values using four modes (strict, left, inner, and outer), and you can define the default values using the missing option.
+    - Delayed feature: some node contents can be designated as "lazy loading," reducing the number of needless processes while working with large-scale trees. (A simple demo: https://anonymous.4open.science/r/tensortree_demos-266C/delayed/demo_mapping.py)
+- Tianshou Batch
+  - Design purpose: tensor tree structure packaging model based on pytorch.
+  - Moderate encapsulation, modeling for pytorch specialization of tree structure.
+  - You may easily examine the structure and data via print, however image export is not supported.
+  - It does not support user-defined logic development and has no compute extension capability at all.
+  - When used, the language style is slightly different, and there are few functions.
+  - Average operation performance.
+- dm-tree
+  - Design purpose: general tree structure operation tool.
+  - Lightweight encapsulation, based on native dict and list structure.
+  - It does not support user-defined logic and has no computational extension capability.
+  - Average operation performance.
+- jax-libtree
+  - Design purpose: general tree structure operation tool (internal utility of Jax library).
+  - Lightweight encapsulation, based on native dict and list structure.
+  - It does not support user-defined logic and has no computational extension capability.
+  - High operation performance.
+  - Others: relatively advanced tree structure computation tools.
+- torchbeast-nest
+  - Design purpose: general tree structure calculation tool (a sub project in torchbeast)
+  - Lightweight encapsulation, based on native dict and list structure
+  - It allows unary and binary operations to be expanded to one or two trees, but it does not allow for complex custom logic construction.
+  - When used, the grammar style is significantly changed, negatively affecting readability and maintainability.
+  - High operation performance
