@@ -5,8 +5,8 @@ import torch
 
 import tensortree.torch as ttorch
 
-N, M, T = 200, 2, 50
-S1, S2, S3 = 512, 1024, 2048
+N, M, T = 300, 2, 50
+S1, S2, S3 = 512, 2500, 1024
 
 
 def test_min():
